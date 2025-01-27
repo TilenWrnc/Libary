@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libary</title>
+    <link rel="stylesheet" href="./Libary.css">
+    <script src="./Libary.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1><span><img src="./img/library-outline.svg" alt="libraryIcon"></span>LIBRARY</h1>
+        </div>
+        <div class="sidebar">
+            <div class="info">
+                <h2>Information</h2>
+                <p>Total Books in Library: <span class="book-tracker">0</span></p>
+                <p>Total Books Read: <span class="books-read-tracker">0</span></p>
+            </div>
+            <div class="form-container">
+                <form class="my-form">
+                    <p>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </p>
+                    <p>
+                        <label for="author">Author</label required>
+                        <input type="text" id="author" name="author" required>
+                    </p>
+                    <p>
+                        <label for="num-of-pages">Number of Pages</label>
+                        <input type="number" id="num-of-pages" name="num-of-pages">
+                    </p>
+                    <p class="checkbox">
+                        <label for="read-check">Did you read the book?</label>
+                        <input type="checkbox" name="already-read" id="read-check">
+                    </p>
+                    <p>
+                        <button class="add-button" type="submit"><span> + </span> Add Book </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="main">
+
+        </div>
+        <div class="footer">
+            <p>Made by @Wrncow</p>
+        </div>
+    </div>
+</body>
+</html>

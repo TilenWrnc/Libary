@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header {
+    background-color: rgb(216, 216, 216);
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: white;
+    grid-area: 2 / 1 / 3 / 2;
+    border-right: 2px solid black;
+}
+
+.main {
+    background-color: white;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    gap: 20px;
+}
+
+.footer {
+    grid-area: 3 / 1 / 4 / 3;
+    height: 50px;
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.book-card {
+    width: 450px;
+    height: 250px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 0px black;
+    position: relative;
+    background-color: bisque;
+}
+
+
+.header img {
+    height: 100px;
+    width: 100px;
+}
+
+.form-container {
+    padding-top: 50px;
+}
+
+.my-form {
+    position: relative;
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px black;
+    margin-bottom: 70px;
+    height: 30px;
+}
+
+.my-form p {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: -25px;
+    left: 35px;
+    font-weight: bolder
+;}
+
+.add-button {
+    height: 70px;
+    width: 250px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 7px solid black;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.info {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.read-button {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightcoral;
+    cursor: pointer;
+
+}
+
+.remove-book {
+    position: absolute;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px  solid black;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;    
+}
+
+#read-check {
+    box-shadow: 0px 0px 0px white;
+    width: 30px;
+    height: 30px;
+    align-self: center
+;}
+
